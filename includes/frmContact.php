@@ -12,8 +12,8 @@
     <input type="email" name="nom" id="case3"/>
   </div>
   <div>
-    <label for="mdp">password </label>
-    <input type="password" name="nom"id="case4"/>
+    <label for="msg">Message : </label>
+    <input type="textarea" name="nom"id="case4"/>
   </div>
   <div>
 <input type="submit" value="Send" id="case5"/>

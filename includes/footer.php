@@ -6,3 +6,4 @@ $year = date('Y');
   <p>&copy; <?= $year ?> - NFactory Corporation</p>
 
 </footer>
+</body>
