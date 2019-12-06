@@ -5,6 +5,10 @@ body {
 background-color:#98FB98;
 }
 
+form {
+  padding: 20px;
+}
+
 h1 {
 text-align:center;
 background-color:#98FB98;
@@ -31,31 +35,26 @@ footer {
   text-align:right;
 }
 
-form input#case1 {
-  margin-left:20%;
-  align-items: baseline;
+form div {
+  padding: 10px 0;
 }
 
-label {
-  margin-left: 22%;
+form div label {
+  float:left;
+  width:200px;
+  text-align:right;
 }
 
-form input#case2 {
-  margin-left: 18.7%;
+form div input[type="submit"] {
+  background-color:white;
+  color:black;
+  margin: 0 0 0 250px;
 }
 
-form input#case3 {
-  margin-left: 19.2%;
+form textarea {
+  font-family: Caviar Dreams, Arial, Verdana, sans-serif;
 }
 
-form input#case4 {
-  margin-left: 18%;
-}
-
-form {
-  margin-top: 2%;
-  margin-left: 2%;
-}
-input#case5 {
-  margin-left: 40%;
+form fieldset {
+  outline: 2px solid white;
 }

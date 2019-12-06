@@ -1,4 +1,6 @@
 <form action="index.php?page=contact" method="post">
+  <fieldset>
+    <legend>ptdr t ki</legend>
   <div>
     <label for="nom">Nom :</label>
     <input type="text" name="nom" id="case1" />
@@ -18,5 +20,6 @@
   <div>
 <input type="submit" value="Send" id="case5"/>
   </div>
+  </fieldset>
   <input type="hidden" value="frmContact" id="case">
 </form>
