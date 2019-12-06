@@ -1,4 +1,4 @@
-<form action="#" method="post">
+<form action="index.php?page=contact" method="post">
   <div>
     <label for="nom">Nom :</label>
     <input type="text" name="nom" id="case1" />
