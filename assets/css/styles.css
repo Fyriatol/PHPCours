@@ -1,0 +1,61 @@
+@import url("reset.css");
+@import url("font.css");
+
+body {
+background-color:#98FB98;
+}
+
+h1 {
+text-align:center;
+background-color:#98FB98;
+margin-top:1%;
+}
+
+ul li {
+  margin-top:1%;
+  border:2px solid black;
+  border-top-width: thin;
+  border-bottom-width: thin;
+  border-right-width:thin;
+  border-left-width:thin;
+  display: inline-block;
+  justify-content:space-around;
+  width:10%;
+  margin-left: 13%;
+  text-align:center;
+  margin-bottom:1%;
+  background-color:#FFFF;
+}
+
+footer {
+  text-align:right;
+}
+
+form input#case1 {
+  margin-left:20%;
+  align-items: baseline;
+}
+
+label {
+  margin-left: 22%;
+}
+
+form input#case2 {
+  margin-left: 18.7%;
+}
+
+form input#case3 {
+  margin-left: 19.2%;
+}
+
+form input#case4 {
+  margin-left: 18%;
+}
+
+form {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+input#case5 {
+  margin-left: 40%;
+}
