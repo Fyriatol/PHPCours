@@ -6,7 +6,7 @@ if (isset($_POST['frmContact'])) {
 }
 
 else {
-  echo "Je viens du futur"
+  echo "Je viens du futur";
 }
 
 require 'frmContact.php';
