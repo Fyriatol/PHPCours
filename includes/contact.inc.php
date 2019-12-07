@@ -2,7 +2,7 @@
 
 <?php
 if (isset($_POST['frmContact'])) {
-  echo "<td align=centre>Je viens du formulaire</td>";
+  echo "Je viens du formulaire";
 }
 
 else {
