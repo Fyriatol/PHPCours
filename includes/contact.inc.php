@@ -2,7 +2,7 @@
 
 <?php
 if (isset($_POST['frmContact'])) {
-    echo "Je viens du formulaire";
+  echo "Je viens du formulaire";
 }
 
 else {
@@ -10,5 +10,3 @@ else {
 }
 
 require 'frmContact.php';
-
-?>
