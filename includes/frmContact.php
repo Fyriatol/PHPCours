@@ -15,7 +15,7 @@
   </div>
   <div>
     <label for="msg">Message : </label>
-    <input type="textarea" name="nom"id="case4"/>
+  <textarea name="msg" id="msg"></textarea>
   </div>
   <div>
 <input type="submit" value="Send" id="case5"/>
