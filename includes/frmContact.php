@@ -21,5 +21,5 @@
 <input type="submit" value="Send" id="case5"/>
   </div>
   </fieldset>
-  <input type="hidden" value="frmContact" id="case">
+  <input type="hidden" value="frmContact" id="case"/>
 </form>
