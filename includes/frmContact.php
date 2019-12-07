@@ -3,23 +3,23 @@
     <legend>ptdr t ki</legend>
   <div>
     <label for="nom">Nom :</label>
-    <input type="text" name="nom" id="case1" />
+    <input type="text" name="nom" id="nom" />
   </div>
   <div>
     <label for="prenom">Prénom :</label>
-    <input type="text" name="nom" id="case2" />
+    <input type="text" name="nom" id="prenom" />
   </div>
   <div>
     <label for="email">e-mail :</label>
-    <input type="email" name="nom" id="case3"/>
+    <input type="email" name="nom" id="mail" />
   </div>
   <div>
     <label for="msg">Message : </label>
   <textarea name="msg" id="msg"></textarea>
   </div>
   <div>
-<input type="submit" value="Send" id="case5"/>
+<input type="submit" value="Send" id="case5" />
   </div>
   </fieldset>
-  <input type="hidden" value="frmContact"/>
+  <input type="hidden" value="frmContact" />
 </form>
