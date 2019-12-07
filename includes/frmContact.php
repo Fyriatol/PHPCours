@@ -1,6 +1,6 @@
 <form action="index.php?page=contact" method="post">
   <fieldset>
-    <legend>ptdr t ki</legend>
+    <legend id="legend">ptdr t ki</legend>
   <div>
     <label for="nom">Nom :</label>
     <input type="text" name="nom" id="nom" />
@@ -15,7 +15,7 @@
   </div>
   <div>
     <label for="msg">Message : </label>
-  <textarea name="msg" id="msg"></textarea>
+  <textarea name="msg" id="msg" style="resize:none"></textarea>
   </div>
   <div>
 <input type="submit" value="Send" id="case5" />

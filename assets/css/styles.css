@@ -7,7 +7,24 @@ background-color:#98FB98;
 
 form {
   padding: 20px;
-  
+  display:flex;
+  justify-content: center;
+}
+
+echo {
+  text-align:center;
+}
+
+legend {
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
+
+textarea {
+  resize:none;
+  width:300px;
+  height:150px;
 }
 
 h1 {
@@ -30,6 +47,7 @@ ul li {
   text-align:center;
   margin-bottom:1%;
   background-color:#FFFF;
+  height:20px;
 }
 
 footer {
