@@ -15,7 +15,7 @@
   </div>
   <div>
     <label for="password">mot de passe:</label>
-  <input type="password" name="password" id="psw"></input>
+  <input type="password" name="password" id="pwd"></input>
   </div>
   <div>
 <input type="submit" value="Send" id="case5" />

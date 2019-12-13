@@ -4,7 +4,7 @@ if (isset($_POST['frmInscription'])) {
   $nom = checkInput($_POST['nom']);
   $prenom = checkInput($_POST['prenom']);
   $mail = checkInput($_POST['mail']);
-  $psw = checkInput($_POST['password']);
+  $pwd = checkInput($_POST['password']);
   $erreur = array();
   if ($nom === "")
     array_push($erreur, "Veuillez saisir votre nom");
@@ -15,14 +15,14 @@ if (isset($_POST['frmInscription'])) {
   if ($msg === "")
     array_push($erreur, "Veuillez saisir un mot de passe");
   if (count($erreur) > 0) {
-    $message = '<ul>';
+    $pwd = '<ul>';
     for($i = 0 ; $i < count($erreur) ; $i++) {
-      $message .= '<li>';
-      $message .= $erreur[$i];
-      $message .= '</li>';
+      $pwd .= '<li>';
+      $pwd .= $erreur[$i];
+      $pwd .= '</li>';
     }
-    $message .= '</ul>';
-    echo $message;
+    $pwd .= '</ul>';
+    echo $pwd;
     require 'frmInscription.php';
   }
 
@@ -37,30 +37,30 @@ if (isset($_POST['frmInscription'])) {
 
     else {
       $sql = "INSERT INTO clients
-      (nom, prenom, mail, message)
+      (nom, prenom, mail, pwd)
       VALUES ('" . $nom . "', '" . $prenom . "', '" . $mail ."', '" . $msg ."')";
       $query = $pdo->prepare($sql);
       $query->bindValue('nom', $nom, PDO::PARAM_STR);
       $query->bindValue('prenom', $prenom, PDO::PARAM_STR);
       $query->bindValue('mail', $mail, PDO::PARAM_STR);
-      $query->bindValue('password', $psw, PDO::PARAM_STR);
+      $query->bindValue('password', $pwd, PDO::PARAM_STR);
       $query->execute();
       echo "ENregistrement OK";
     }
 
     $sql = "INSERT INTO clients
-    (nom, prenom, mail, message)
+    (nom, prenom, mail, pwd)
     VALUES ('" . $nom . "', '" . $prenom . "', '" . $mail ."', '" . $msg ."')";
     $query = $pdo->prepare($sql);
     $query->bindValue('nom', $nom, PDO::PARAM_STR);
     $query->bindValue('prenom', $prenom, PDO::PARAM_STR);
     $query->bindValue('mail', $mail, PDO::PARAM_STR);
-    $query->bindValue('password', $psw, PDO::PARAM_STR);
+    $query->bindValue('password', $pwd, PDO::PARAM_STR);
     $query->execute();
     echo "ENregistrement OK";
   }
 }
 else {
-  $nom = $prenom = $mail = $psw = "";
+  $nom = $prenom = $mail = $pwd = "";
   require 'frmInscription.php';
 }
