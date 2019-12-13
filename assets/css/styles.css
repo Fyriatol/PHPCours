@@ -17,10 +17,18 @@ legend {
   justify-content: center;
 }
 
-textarea {
+div#provenance {
+  text-align:center;
+}
+
+textarea#msg {
   resize:none;
   width:300px;
   height:150px;
+}
+
+textarea#psw {
+  resize:none;
 }
 
 h1 {
@@ -39,7 +47,7 @@ ul li {
   display: inline-block;
   justify-content:space-around;
   width:10%;
-  margin-left: 13%;
+  margin-left: 8%;
   text-align:center;
   margin-bottom:1%;
   background-color:#FFFF;

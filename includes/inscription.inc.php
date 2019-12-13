@@ -1,10 +1,10 @@
-<h1>CONTACTS</h1>
+<h1>S'INSCRIRE</h1>
 <?php
-if (isset($_POST['frmContact'])) {
+if (isset($_POST['frmInscription'])) {
   $nom = checkInput($_POST['nom']);
   $prenom = checkInput($_POST['prenom']);
   $mail = checkInput($_POST['mail']);
-  $msg = checkInput($_POST['msg']);
+  $psw = checkInput($_POST['password']);
   $erreur = array();
   if ($nom === "")
     array_push($erreur, "Veuillez saisir votre nom");
@@ -13,7 +13,7 @@ if (isset($_POST['frmContact'])) {
   if ($mail === "")
     array_push($erreur, "Veuillez saisir une adresse mail");
   if ($msg === "")
-    array_push($erreur, "Veuillez saisir un message");
+    array_push($erreur, "Veuillez saisir un mot de passe");
   if (count($erreur) > 0) {
     $message = '<ul>';
     for($i = 0 ; $i < count($erreur) ; $i++) {
@@ -23,7 +23,7 @@ if (isset($_POST['frmContact'])) {
     }
     $message .= '</ul>';
     echo $message;
-    require 'frmContact.php';
+    require 'frmInscription.php';
   }
 
   else {
@@ -43,7 +43,7 @@ if (isset($_POST['frmContact'])) {
       $query->bindValue('nom', $nom, PDO::PARAM_STR);
       $query->bindValue('prenom', $prenom, PDO::PARAM_STR);
       $query->bindValue('mail', $mail, PDO::PARAM_STR);
-      $query->bindValue('message', $msg, PDO::PARAM_STR);
+      $query->bindValue('password', $psw, PDO::PARAM_STR);
       $query->execute();
       echo "ENregistrement OK";
     }
@@ -55,12 +55,12 @@ if (isset($_POST['frmContact'])) {
     $query->bindValue('nom', $nom, PDO::PARAM_STR);
     $query->bindValue('prenom', $prenom, PDO::PARAM_STR);
     $query->bindValue('mail', $mail, PDO::PARAM_STR);
-    $query->bindValue('message', $msg, PDO::PARAM_STR);
+    $query->bindValue('password', $psw, PDO::PARAM_STR);
     $query->execute();
     echo "ENregistrement OK";
   }
 }
 else {
-  $nom = $prenom = $mail = $msg = "";
-  require 'frmContact.php';
+  $nom = $prenom = $mail = $psw = "";
+  require 'frmInscription.php';
 }
