@@ -1,6 +1,8 @@
 <h1>CONTACTS</h1>
 <?php
+//var_dump ($_POST);
 if (isset($_POST['frmContact'])) {
+  // die("coucou je suis là");
   $nom = checkInput($_POST['nom']);
   $prenom = checkInput($_POST['prenom']);
   $mail = checkInput($_POST['mail']);

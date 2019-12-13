@@ -7,11 +7,11 @@
   </div>
   <div>
     <label for="prenom">Prénom :</label>
-    <input type="text" name="nom" id="prenom" />
+    <input type="text" name="prenom" id="prenom" />
   </div>
   <div>
     <label for="email">e-mail :</label>
-    <input type="email" name="nom" id="mail" />
+    <input type="email" name="mail" id="mail" />
   </div>
   <div>
     <label for="password">mot de passe:</label>
@@ -21,5 +21,5 @@
 <input type="submit" value="Send" id="case5" />
   </div>
   </fieldset>
-  <input type="hidden" value="frmInscription" />
+  <input type="hidden" name="frmInscription" />
 </form>

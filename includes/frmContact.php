@@ -7,11 +7,11 @@
   </div>
   <div>
     <label for="prenom">Prénom :</label>
-    <input type="text" name="nom" id="prenom" />
+    <input type="text" name="prenom" id="prenom" />
   </div>
   <div>
-    <label for="email">e-mail :</label>
-    <input type="email" name="nom" id="mail" />
+    <label for="mail">e-mail :</label>
+    <input type="mail" name="mail" id="mail" />
   </div>
   <div>
     <label for="msg">Message : </label>
@@ -21,5 +21,5 @@
 <input type="submit" value="Send" id="case5" />
   </div>
   </fieldset>
-  <input type="hidden" value="frmContact" />
+  <input type="hidden" name="frmContact" />
 </form>
